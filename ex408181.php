@@ -1,7 +1,7 @@
 <?php
 
 abstract class Shape {
-    const UNIT = "cm";
+    const UNIT = "cm²";
     
     abstract public function area();
 }
@@ -28,7 +28,7 @@ class Circle extends Shape {
     }
     
     public function area() {
-        return pi() * pow($this->radius, 2);
+        return pi() * ($this->radius ** 2);
     }
 }
 
